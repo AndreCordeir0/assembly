@@ -1,7 +1,7 @@
 gerar_exe: compilar linkar exec
 
 compilar:
-	nasm -f elf64 -o compare.o compare.asm
+	nasm -f elf64 -g -o compare.o compare.asm
 
 linkar:
 	ld -s -o compare compare.o
